@@ -71,13 +71,22 @@ En suivant ces étapes, vous aurez réussi à créer une entité Article, à eff
 Continuez à vous référer à la documentation Symfony pour des détails plus approfondis et pour explorer davantage les fonctionnalités du framework.
 
 5. **Création d'un article :**
-   
-En ayant vu la méthode pour insérer en base de données, veuillez créer un article
-voir: ``méthode register ``
+
+Une fois que votre entité Article est prête et que vous avez mis en place le schéma de la base de données, vous pouvez maintenant ajouter la fonctionnalité de création d'un article.
+Dans votre méthode createArticle, implémentez la logique nécessaire dans cette action pour récupérer les données du formulaire d'ajout d'article et les enregistrer en base de données.
+Assurez-vous de valider les données pour garantir leur intégrité, vous pouvez prendre exemple sur le code existant pour écrire votre logique.
 
 6. **Lecture des article :**
-   
-En ayant vu la méthode pour lire les articles dans votre contrôleur et dans votre vue. Avec les méthodes de Twig afficher un article sur votre vue ``article.html.twig`` 
 
+Maintenant que vous avez la possibilité de créer des articles, vous pouvez ajouter la fonctionnalité de lecture des articles.
+Implémentez la logique nécessair pour récupérer les articles en base de données et les afficher sur votre vue.
+Utiliser les méthodes de votre ArticleRepository pour récupérer les articles en base de données.
+
+7. **Lecture d'un article :**
+
+Maintenant vous pouvez ajouter la fonctionnalité de lecture d'un seul article.
+Implémentez un méthode showArticle pour récupérer un article en base de données et l'afficher sur votre vue.
+Appuyez-vous sur la documentation de Symfony pour récupérer un article en base de données. 
+-> https://symfony.com/doc/current/routing.html#matching-http-methods
 
  
